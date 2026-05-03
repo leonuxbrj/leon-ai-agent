@@ -1,0 +1,29 @@
+{
+  "api_key": "AIzaSyC7VY48pRubbIcD0G-UvVSLhSD_wWCLM2g",
+  "model": "gemini-2.0-flash",
+  "agent_name": "Leon AI Agent",
+  "max_output_tokens": 8192,
+  "temperature": 0.7,
+  "restrictions": [
+    "Responda sempre em português brasileiro",
+    "Seja direto e prático",
+    "Não execute comandos destrutivos sem confirmação explícita",
+    "Mantenha um log de todas as ações realizadas"
+  ],
+  "allowed_commands": [
+    "dir", "ls", "cd", "mkdir", "copy", "move", "del", "type", "cat",
+    "echo", "find", "grep", "ping", "ipconfig", "systeminfo",
+    "python", "pip", "node", "npm", "git",
+    "curl", "wget"
+  ],
+  "blocked_commands": [
+    "format", "fdisk", "rm -rf /", "rmdir /s /q C:\\",
+    "reg delete", "net user", "net localgroup",
+    "taskkill /f /im", "shutdown"
+  ],
+  "watch_folder": "watched_files",
+  "memory_db": "memory.db",
+  "log_file": "agent.log",
+  "theme": "dark",
+  "language": "pt-BR"
+}
